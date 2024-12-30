@@ -14,30 +14,36 @@ The **Company Brochure Generator Pro** is a Python-based utility for creating pr
 1. Clone the repository:
    ```bash
    git clone https://github.com/emads22/company-brochure-generator-pro.git
-   cd brochure-generator
+   cd company-brochure-generator-pro
    ```
 2. Ensure Conda is installed.
 3. Create the Conda environment using the provided `brochure_builder_env.yml` file:
    ```bash
    conda env create -f brochure_builder_env.yml
-   conda activate brochure_builder_env
+   conda activate brochure_builder
    ```
 4. Configure the script to use the GPT model `gpt-4o-mini` (ensure access to the model and API key in the `.env` file).
-5. Optionally, adjust constants like `MODEL` and `HEADERS` in the script if necessary.
+5. Launch Jupyter Lab:
+   ```bash
+   jupyter lab
+6. Open the `brochure_builder_pro.ipynb` notebook in Jupyter Lab and run the cells step-by-step.
+7. Optionally, adjust constants like `MODEL` and `HEADERS` in the script if necessary.
 
 ## Usage
-1. Open the repository in a Jupyter Notebook environment.
-2. To create a brochure dynamically, use the `stream_brochure` function:
+1. Open Jupyter Lab and navigate to the `brochure_builder_pro.ipynb` notebook.
+2. Run the notebook cells sequentially.
+3. To create a brochure dynamically, use the `stream_brochure` function:
    ```python
    stream_brochure("Company Name", "https://companywebsite.com")
    ```
-3. If you prefer not to stream the content, use the `create_brochure` function instead:
+4. If you prefer not to stream the content, use the `create_brochure` function instead:
    ```python
    create_brochure("Company Name", "https://companywebsite.com")
    ```
-4. Modify the `brochure_system_prompt` to change the tone of the brochure. For example:
+5. Modify the `brochure_system_prompt` to change the tone of the brochure. For example:
     - Uncomment the humorous prompt in the script to generate a lighthearted, entertaining brochure.
     - Adjust the prompt text to suit your specific needs, such as focusing on particular aspects of the company or adopting a custom tone.
+6. Results are dynamically displayed in the Jupyter Lab interface.
 
 ## Contributing
 Contributions are welcome! Here are some ways you can contribute:
