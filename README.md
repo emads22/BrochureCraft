@@ -44,7 +44,7 @@
    - Pro: `brochure_craft_pro.ipynb`
    - UI: `brochure_craft_ui.ipynb`
 7. Run the cells step-by-step to generate the brochure.
-8. Optionally, adjust constants like `MODEL` and `HEADERS` in the script if necessary.
+8. Optionally, adjust constants like `GPT_MODEL`, `CLAUDE_MODEL`, and `HEADERS` in the script if necessary.
 
 ## Usage
 1. Open Jupyter Lab and navigate to the appropriate notebook:
@@ -57,7 +57,10 @@
      ```python
      stream_brochure("Company Name", "https://companywebsite.com")
      ```
-   - UI: Launch the Gradio interface by running the last cell in `brochure_craft_ui.ipynb`. Enter the company name, website URL, and desired tone directly into the interface.
+   - UI: Launch the Gradio interface by running the last cell in `brochure_craft_ui.ipynb`. Enter the company name, website URL, model name, and desired tone directly into the interface.
+     ```python
+     stream_brochure("Company Name", "https://companywebsite.com", "Model name", "Desired tone")
+     ```
 4. If you prefer not to stream the content, use the `create_brochure` function instead (Lite/Pro only):
    ```python
    create_brochure("Company Name", "https://companywebsite.com")
