@@ -1,4 +1,4 @@
-name: brochure_builder
+name: brochure
 channels:
   - conda-forge
   - defaults
@@ -12,3 +12,5 @@ dependencies:
     - beautifulsoup4
     - openai
     - ollama
+    - anthropic
+    - gradio
