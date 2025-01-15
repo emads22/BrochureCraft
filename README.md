@@ -22,8 +22,8 @@
 ## Setup
 1. Clone the repository:
    ```bash
-   git clone https://github.com/emads22/brochure-craft.git
-   cd brochure-craft
+   git clone https://github.com/emads22/BrochureCraft.git
+   cd BrochureCraft
    ```
 2. Ensure Conda is installed.
 3. Create the Conda environment using the provided `brochure_env.yml` file:
