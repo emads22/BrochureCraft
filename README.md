@@ -40,24 +40,24 @@
    jupyter lab
    ```
 6. Open the corresponding notebook:
-   - Lite: `brochure_craft_lite.ipynb`
-   - Pro: `brochure_craft_pro.ipynb`
-   - UI: `brochure_craft_ui.ipynb`
+   - Lite: `brochurecraft_lite.ipynb`
+   - Pro: `brochurecraft_pro.ipynb`
+   - UI: `brochurecraft_ui.ipynb`
 7. Run the cells step-by-step to generate the brochure.
 8. Optionally, adjust constants like `GPT_MODEL`, `CLAUDE_MODEL`, and `HEADERS` in the script if necessary.
 
 ## Usage
 1. Open Jupyter Lab and navigate to the appropriate notebook:
-   - Lite: `brochure_craft_lite.ipynb`
-   - Pro: `brochure_craft_pro.ipynb`
-   - UI: `brochure_craft_ui.ipynb`
+   - Lite: `brochurecraft_lite.ipynb`
+   - Pro: `brochurecraft_pro.ipynb`
+   - UI: `brochurecraft_ui.ipynb`
 2. Run the notebook cells sequentially.
 3. To create a brochure dynamically:
    - Lite/Pro: Use the `stream_brochure` function:
      ```python
      stream_brochure("Company Name", "https://companywebsite.com")
      ```
-   - UI: Launch the Gradio interface by running the last cell in `brochure_craft_ui.ipynb`. Enter the company name, website URL, model name, and desired tone directly into the interface.
+   - UI: Launch the Gradio interface by running the last cell in `brochurecraft_ui.ipynb`. Enter the company name, website URL, model name, and desired tone directly into the interface.
      ```python
      stream_brochure("Company Name", "https://companywebsite.com", "Model name", "Desired tone")
      ```
@@ -65,7 +65,7 @@
    ```python
    create_brochure("Company Name", "https://companywebsite.com")
    ```
-5. Modify the `brochure_system_prompt` to change the tone of the brochure in `brochure_craft_lite.ipynb` and `brochure_craft_pro.ipynb`. For example:
+5. Modify the `brochure_system_prompt` to change the tone of the brochure in `brochurecraft_lite.ipynb` and `brochurecraft_pro.ipynb`. For example:
     - Uncomment the humorous prompt in the script to generate a lighthearted, entertaining brochure.
     - Adjust the prompt text to suit your specific needs, such as focusing on particular aspects of the company or adopting a custom tone.
 6. Results are dynamically displayed in the Jupyter Lab interface or Gradio UI.
